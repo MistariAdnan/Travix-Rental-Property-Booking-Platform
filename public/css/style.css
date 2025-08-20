@@ -1,0 +1,218 @@
+    body {
+        font-family: "Plus Jakarta Sans", sans-serif !important;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #b47d16;
+    }
+    
+    .container {
+        flex: 1;
+        /* background-color: whitesmoke; */
+    }
+    /* navbar*/
+    
+    .navbar {
+        height: 5rem;
+        background-color: rgb(207, 29, 29);
+    }
+    
+    .fa-house {
+        color: #fe424d;
+        font-size: 2rem;
+    }
+    
+    .nav-link {
+        color: #222222 !important;
+    }
+    /* footer */
+    
+    .f-info-links a {
+        text-decoration: none;
+        color: #222222
+    }
+    
+    .f-info-links a:hover {
+        text-decoration: underline;
+    }
+    
+    .f-info-links,
+    .f-info-socials,
+    .f-info-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .f-info-socials i {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .f-lnfo {
+        text-align: center;
+        height: 6rem;
+        background-color: #ebebeb;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* cards */
+    
+    .listing-card {
+        border: none !important;
+        margin-bottom: 2rem;
+    }
+    
+    .card-img-top {
+        border-radius: 1.2rem !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    .card-body {
+        padding: 0 !important;
+    }
+    
+    .card-text p {
+        font-weight: 400 !important;
+    }
+    
+    .listing-link {
+        text-decoration: none;
+    }
+    /*card effect */
+    
+    .card-img-overlay {
+        opacity: 0;
+    }
+    
+    .card-img-overlay:hover {
+        opacity: 0.2;
+        background-color: white;
+    }
+    /* new
+*/
+    
+    .add-btn {
+        background-color: #fe424d !important;
+        color: white;
+        border: none !important;
+    }
+    /* edit-page */
+    
+    .edit-btn {
+        background-color: #fe424d !important;
+        color: white;
+        border: none !important;
+    }
+    /* show page */
+    
+    .show-img {
+        height: 20vh;
+    }
+    
+    .btns {
+        display: flex;
+    }
+    
+    .show-card {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* }///////new style//// */
+    /* 🔹 Listing Card Premium Look */
+    
+    .listing-card {
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #fff;
+        transition: all 0.4s ease-in-out;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+    
+    .listing-card:hover {
+        transform: translateY(-12px) scale(1.04) rotateX(2deg);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+    /* 🔹 Card Body Floating Effect */
+    
+    .listing-card .card-body {
+        padding: 1rem;
+        transition: transform 0.1s ease;
+    }
+    
+    .listing-card:hover .card-body {
+        transform: translateY(-5px);
+    }
+    /* 🔹 Image Hover (Zoom + Brightness) */
+    
+    .listing-card img {
+        transition: transform 0.6s ease, filter 0.4s ease;
+    }
+    
+    .listing-card:hover img {
+        transform: scale(0.9);
+        filter: brightness(0.9);
+    }
+    /* 🔹 Fancy Overlay */
+    
+    .card-img-overlay {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+        opacity: 0;
+        transition: opacity 0.1s ease;
+    }
+    
+    .listing-card:hover .card-img-overlay {
+        opacity: 0.1;
+    }
+    /* 🔹 Filters Premium Style */
+    
+    .filter {
+        text-align: center;
+        margin: 0.5rem 1rem;
+        padding: 0.7rem 1rem;
+        border-radius: 12px;
+        background: #f9f9f9;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .filter:hover {
+        background: #fe424d;
+        color: #fff;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 5px 15px rgba(254, 66, 77, 0.4);
+    }
+    /* 🔹 Search Button Glow */
+    
+    .btn-search {
+        background-color: #fe424d;
+        color: #fff;
+        border-radius: 25px;
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-search:hover {
+        background-color: #ff2e38;
+        box-shadow: 0 0 10px #be262e;
+        transform: scale(0.8);
+    }
+    /* 🔹 Fade + Slide Animation for Cards */
+    
+    @keyframes slideUpFade {
+        10% {
+            opacity: 1;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
